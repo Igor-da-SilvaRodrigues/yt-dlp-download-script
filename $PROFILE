@@ -1,0 +1,6 @@
+function ytdl{
+	param (
+        [string]$url
+    )
+    yt-dlp.exe $url -o "./Downloads/$url.mp4" -f mp4
+}
